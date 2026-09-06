@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cafe Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            ☕
+            <span>Cafe Demo</span>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="welcome">
+                خوش اومدی 🌿
+            </span>
+
+            <h1>
+                طعم خوب،
+                <span>حال خوب</span>
+            </h1>
+
+            <p>
+                منوی کافه ما رو ببین و نوشیدنی مورد علاقت رو پیدا کن.
+            </p>
+
+            <a href="#menu" class="start-btn">
+                مشاهده منو ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu -->
+    <main id="menu" class="menu-section">
+
+        <div class="section-title">
+
+            <span>MENU</span>
+
+            <h2>
+                منوی کافه
+            </h2>
+
+            <p>
+                یه چیزی برای هر سلیقه ☕
+            </p>
+
+        </div>
+
+
+        <!-- Categories -->
+        <div class="categories">
+
+            <button class="category active" data-category="all">
+                همه
+            </button>
+
+            <button class="category" data-category="☕ قهوه">
+                ☕ قهوه
+            </button>
+
+            <button class="category" data-category="🧊 نوشیدنی سرد">
+                🧊 نوشیدنی سرد
+            </button>
+
+            <button class="category" data-category="🍰 دسر">
+                🍰 دسر
+            </button>
+
+            <button class="category" data-category="breakfast">
+                🥐 صبحانه
+            </button>
+
+        </div>
+
+        <!-- Products -->
+        <div class="products"></div>
+
+        <!-- Product 1 -->
+        <article class="product-card" data-category="☕ قهوه">
+
+            <div class="product-image">
+                <img src="images/espresso.jpg" alt="اسپرسو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>اسپرسو</h3>
+                    <span class="price">۸۵,۰۰۰</span>
+                </div>
+
+                <p>اسپرسوی اصیل با عطر و طعم فوق‌العاده</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 2 -->
+        <article class="product-card" data-category="☕ قهوه">
+
+            <div class="product-image">
+                <img src="images/latte.jpg" alt="لاته">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>لاته</h3>
+                    <span class="price">۱۲۵,۰۰۰</span>
+                </div>
+
+                <p>ترکیب اسپرسو و شیر با فوم نرم و دلچسب</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 3 -->
+        <article class="product-card" data-category="🧊 نوشیدنی سرد">
+
+            <div class="product-image">
+                <img src="images/ice-latte.jpg" alt="آیس لاته">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>آیس لاته</h3>
+                    <span class="price">۱۴۵,۰۰۰</span>
+                </div>
+
+                <p>یه انتخاب خنک برای روزهای گرم</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 4 -->
+        <article class="product-card" data-category="🧊 نوشیدنی سرد">
+
+            <div class="product-image">
+                <img src="images/ice-caramel-macchiato.jpg" alt="آیس کارامل ماکیاتو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>آیس کارامل ماکیاتو</h3>
+                    <span class="price">۱۶۵,۰۰۰</span>
+                </div>
+
+                <p>ترکیبی خنک از اسپرسو، شیر و سس کارامل</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 5 -->
+        <article class="product-card" data-category="🍰 دسر">
+
+            <div class="product-image">
+                <img src="images/cheesecake.jpg" alt="چیزکیک">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>چیزکیک</h3>
+                    <span class="price">۱۵۵,۰۰۰</span>
+                </div>
+
+                <p>چیزکیک خامه‌ای با طعم فوق‌العاده</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 6 -->
+        <article class="product-card" data-category="breakfast">
+
+            <div class="product-image">
+                <img src="images/croissant.jpg" alt="کروسان شکلاتی">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>کروسان شکلاتی</h3>
+                    <span class="price">۱۲۰,۰۰۰</span>
+                </div>
+
+                <p>کروسان تازه و کره‌ای با مغز شکلات</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 7 -->
+        <article class="product-card" data-category="breakfast">
+
+            <div class="product-image">
+                <img src="images/english-breakfast.jpg" alt="صبحانه انگلیسی">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>صبحانه انگلیسی</h3>
+                    <span class="price">۲۲۰,۰۰۰</span>
+                </div>
+
+                <p>تخم‌مرغ، سوسیس، لوبیا، قارچ و نان تست</p>
+            </div>
+
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card" data-category="☕ قهوه">
+
+            <div class="product-image">
+                <img src="images/double-espresso.jpg" alt="دبل اسپرسو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>دبل اسپرسو</h3>
+                    <span class="price">۱۰۰,۰۰۰</span>
+                </div>
+
+                <p>اسپرسوی دوبل با عطر و طعم قوی و ماندگار</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 9 -->
+        <article class="product-card" data-category="☕ قهوه">
+
+            <div class="product-image">
+                <img src="images/americano.jpg" alt="آمریکانو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>آمریکانو</h3>
+                    <span class="price">۱۱۰,۰۰۰</span>
+                </div>
+
+                <p>اسپرسو و آب داغ با طعمی ملایم و دلنشین</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 10 -->
+        <article class="product-card" data-category="☕ قهوه">
+
+            <div class="product-image">
+                <img src="images/cappuccino.jpg" alt="کاپوچینو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>کاپوچینو</h3>
+                    <span class="price">۱۳۰,۰۰۰</span>
+                </div>
+
+                <p>ترکیب اسپرسو، شیر گرم و فوم شیر نرم و خوش‌طعم</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 11 -->
+        <article class="product-card" data-category="☕ قهوه">
+
+            <div class="product-image">
+                <img src="images/mocha.jpg" alt="موکا">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>موکا</h3>
+                    <span class="price">۱۴۰,۰۰۰</span>
+                </div>
+
+                <p>ترکیب اسپرسو، شیر و شکلات با طعمی شیرین و دلچسب</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 12 -->
+        <article class="product-card" data-category="🧊 نوشیدنی سرد">
+
+            <div class="product-image">
+                <img src="images/ice-americano.jpg" alt="آیس آمریکانو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>آیس آمریکانو</h3>
+                    <span class="price">۱۱۵,۰۰۰</span>
+                </div>
+
+                <p>آمریکانو خنک با یخ برای یک انتخاب تازه و سبک</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 13 -->
+        <article class="product-card" data-category="🧊 نوشیدنی سرد">
+
+            <div class="product-image">
+                <img src="images/ice-mocha.jpg" alt="آیس موکا">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>آیس موکا</h3>
+                    <span class="price">۱۵۰,۰۰۰</span>
+                </div>
+
+                <p>ترکیب خنک اسپرسو، شیر، شکلات و یخ</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 14 -->
+        <article class="product-card" data-category="🧊 نوشیدنی سرد">
+
+            <div class="product-image">
+                <img src="images/mojito.jpg" alt="موهیتو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>موهیتو</h3>
+                    <span class="price">۱۳۵,۰۰۰</span>
+                </div>
+
+                <p>نوشیدنی خنک با لیمو، نعناع و یخ</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 15 -->
+        <article class="product-card" data-category="🧊 نوشیدنی سرد">
+
+            <div class="product-image">
+                <img src="images/lemonade.jpg" alt="لیموناد">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>لیموناد</h3>
+                    <span class="price">۱۲۰,۰۰۰</span>
+                </div>
+
+                <p>لیموناد تازه و خنک با طعم ترش و شیرین</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 16 -->
+        <article class="product-card" data-category="🍰 دسر">
+
+            <div class="product-image">
+                <img src="images/tiramisu.jpg" alt="تیرامیسو">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>تیرامیسو</h3>
+                    <span class="price">۱۷۵,۰۰۰</span>
+                </div>
+
+                <p>دسر ایتالیایی با قهوه، ماسکارپونه و پودر کاکائو</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 17 -->
+        <article class="product-card" data-category="🍰 دسر">
+
+            <div class="product-image">
+                <img src="images/brownie.jpg" alt="براونی">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>براونی شکلاتی</h3>
+                    <span class="price">۱۴۵,۰۰۰</span>
+                </div>
+
+                <p>براونی شکلاتی نرم و خوش‌طعم با بافتی دلچسب</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 18 -->
+        <article class="product-card" data-category="🍰 دسر">
+
+            <div class="product-image">
+                <img src="images/chocolate-cake.jpg" alt="کیک شکلاتی">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>کیک شکلاتی</h3>
+                    <span class="price">۱۶۰,۰۰۰</span>
+                </div>
+
+                <p>کیک شکلاتی نرم با روکش شکلاتی خوشمزه</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 19 -->
+        <article class="product-card" data-category="breakfast">
+
+            <div class="product-image">
+                <img src="images/pancake.jpg" alt="پنکیک">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>پنکیک</h3>
+                    <span class="price">۱۵۰,۰۰۰</span>
+                </div>
+
+                <p>پنکیک تازه با عسل، میوه و سس مخصوص</p>
+            </div>
+
+        </article>
+
+
+        <!-- Product 20 -->
+        <article class="product-card" data-category="breakfast">
+
+            <div class="product-image">
+                <img src="images/omelette.jpg" alt="املت">
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    <h3>املت</h3>
+                    <span class="price">۱۶۰,۰۰۰</span>
+                </div>
+
+                <p>املت تازه با تخم‌مرغ، گوجه، قارچ و نان تست</p>
+            </div>
+
+        </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ☕ Cafe Demo
+        </div>
+
+        <p>
+            ساخته شده با ❤️ برای عاشقان قهوه
+        </p>
+
+        <span>
+            © 2026
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
